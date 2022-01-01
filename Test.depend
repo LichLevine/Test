@@ -1,0 +1,53 @@
+# depslib dependency file v1.0
+1641043461 source:c:\users\11247\desktop\test\main.c
+	<stdio.h>
+	<stdlib.h>
+	<pthread.h>
+	"chessmap.h"
+	"display.h"
+	"move.h"
+	"TimeCount.h"
+
+1640786995 c:\users\11247\desktop\test\chessmap.h
+
+1637489451 c:\users\11247\desktop\test\display.h
+	<stdio.h>
+	<stdlib.h>
+	"chessmap.h"
+
+1637489460 c:\users\11247\desktop\test\move.h
+	<stdio.h>
+	<stdlib.h>
+	"chessmap.h"
+
+1641044649 source:c:\users\11247\desktop\test\display.c
+	<stdio.h>
+	<stdlib.h>
+	<pthread.h>
+	"chessmap.h"
+	"TimeCount.h"
+
+1641045658 source:c:\users\11247\desktop\test\move.c
+	<stdio.h>
+	<stdlib.h>
+	<pthread.h>
+	"chessmap.h"
+	"TimeCount.h"
+
+1640786136 source:c:\users\11247\desktop\test\judge.c
+	<stdio.h>
+	<stdlib.h>
+	"chessmap.h"
+
+1641040813 source:c:\users\11247\desktop\test\quest.c
+	<stdio.h>
+	<stdlib.h>
+	"chessmap.h"
+
+1641045530 source:c:\users\11247\desktop\test\timecount.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1641043505 c:\users\11247\desktop\test\timecount.h
+
