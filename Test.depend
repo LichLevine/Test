@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1641043461 source:c:\users\11247\desktop\test\main.c
+1641049534 source:c:\users\11247\desktop\test\main.c
 	<stdio.h>
 	<stdlib.h>
 	<pthread.h>
@@ -7,6 +7,7 @@
 	"display.h"
 	"move.h"
 	"TimeCount.h"
+	"Mode.h"
 
 1640786995 c:\users\11247\desktop\test\chessmap.h
 
@@ -50,4 +51,10 @@
 	<time.h>
 
 1641043505 c:\users\11247\desktop\test\timecount.h
+
+1641049040 c:\users\11247\desktop\test\mode.h
+
+1641049419 source:c:\users\11247\desktop\test\mode.c
+	<stdio.h>
+	<stdlib.h>
 

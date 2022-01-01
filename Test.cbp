@@ -31,6 +31,12 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Mode.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Mode.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Unit filename="Quest.c">
 			<Option compilerVar="CC" />
 		</Unit>
