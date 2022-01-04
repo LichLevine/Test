@@ -4,11 +4,12 @@
 
 extern fallen[ROW][COLUMN];
 extern End;
+extern Timeflag;
 
 /*判断游戏胜负*/
 void gamejudge(int order)
 {
-    /*变量代表游戏方胜利，1为黑方，2为白方*/
+    /*变量代表游戏方胜利，1为黑方获胜，2为白方获胜，3为平局*/
     int judgement = 0;
 
     for(int i=0;i<ROW;i++)
@@ -82,7 +83,7 @@ void gamejudge(int order)
 				    judgement = 2;
 				}
             //副对角线获胜
-             else if(fallen[i][j] == 2
+            else if(fallen[i][j] == 2
                 && fallen[i + 1][j - 1] == 2
 				&& fallen[i + 2][j - 2] == 2
 				&& fallen[i + 3][j - 3] == 2
@@ -90,18 +91,38 @@ void gamejudge(int order)
 				{
 				    judgement = 2;
 				}
+
+            //平局
+            else if(fallen[i][j] == ' ')
+                {
+                    judgement = 3;
+                }
+
         }
     }
     if(judgement == 1)
     {
-            printf("黑方胜利！\n");
-            End = 1;
+        printf("*********************\n");
+        printf("*****!黑方胜利！*****\n");
+        printf("*********************\n");
+        End = 1;
+        Timeflag = 2;
 
     }
     else if(judgement == 2)
     {
-            printf("白方胜利！\n");
-            End = 1;
+        printf("*********************\n");
+        printf("*****!白方胜利！*****\n");
+        printf("*********************\n");
+        End = 1;
+        Timeflag = 2;
     }
-
+    else if(judgement == 3)
+    {
+        printf("****************\n");
+        printf("*****!平局！****\n");
+        printf("****************\n");
+        End = 1;
+        Timeflag = 2;
+    }
 }

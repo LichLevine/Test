@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <pthread.h>
 #include "chessmap.h"
-#include "TimeCount.h"
 
 /*刷新棋盘*/
 void draw(int **state, int row, int column)

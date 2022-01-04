@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1641049534 source:c:\users\11247\desktop\test\main.c
+1641189962 source:c:\users\11247\desktop\test\main.c
 	<stdio.h>
 	<stdlib.h>
 	<pthread.h>
@@ -16,45 +16,42 @@
 	<stdlib.h>
 	"chessmap.h"
 
-1637489460 c:\users\11247\desktop\test\move.h
+1641107609 c:\users\11247\desktop\test\move.h
 	<stdio.h>
 	<stdlib.h>
 	"chessmap.h"
 
-1641044649 source:c:\users\11247\desktop\test\display.c
-	<stdio.h>
-	<stdlib.h>
-	<pthread.h>
-	"chessmap.h"
-	"TimeCount.h"
-
-1641045658 source:c:\users\11247\desktop\test\move.c
-	<stdio.h>
-	<stdlib.h>
-	<pthread.h>
-	"chessmap.h"
-	"TimeCount.h"
-
-1640786136 source:c:\users\11247\desktop\test\judge.c
+1641137135 source:c:\users\11247\desktop\test\display.c
 	<stdio.h>
 	<stdlib.h>
 	"chessmap.h"
 
-1641040813 source:c:\users\11247\desktop\test\quest.c
+1641190436 source:c:\users\11247\desktop\test\move.c
 	<stdio.h>
 	<stdlib.h>
 	"chessmap.h"
 
-1641045530 source:c:\users\11247\desktop\test\timecount.c
+1641187680 source:c:\users\11247\desktop\test\judge.c
+	<stdio.h>
+	<stdlib.h>
+	"chessmap.h"
+
+1641187461 source:c:\users\11247\desktop\test\quest.c
+	<stdio.h>
+	<stdlib.h>
+	"chessmap.h"
+
+1641187698 source:c:\users\11247\desktop\test\timecount.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
+	"display.h"
 
 1641043505 c:\users\11247\desktop\test\timecount.h
 
 1641049040 c:\users\11247\desktop\test\mode.h
 
-1641049419 source:c:\users\11247\desktop\test\mode.c
+1641112832 source:c:\users\11247\desktop\test\mode.c
 	<stdio.h>
 	<stdlib.h>
 

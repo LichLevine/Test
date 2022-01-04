@@ -20,7 +20,7 @@ void Question()
     printf("1:三三禁手\n");
     printf("2:四四禁手\n");
     printf("3:长连禁手\n");
-    printf("你的输入是：");
+    printf("你的输入是：\n");
 
     /*取出白方玩家提出禁手原则质疑的种类*/
     scanf("%d",&Forbidden);
