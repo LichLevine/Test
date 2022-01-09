@@ -13,7 +13,6 @@ void draw(int **state, int row, int column)
     /*列序号对齐棋盘*/
     printf("  ");
 
-
 	/*标出棋盘的列序号*/
 	for (i = 0; i < column; i++)
 		printf("%c ", (char)(i+65));

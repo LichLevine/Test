@@ -124,14 +124,11 @@ void AImove(int **state, int row, int column, int order)
                     fallen[x][y] = 2;
                     break;
                 }
-
             }
             else
             {
                 continue;
             }
-
         }
-
     }
 }

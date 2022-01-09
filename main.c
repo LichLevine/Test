@@ -14,9 +14,6 @@ int fallen[ROW][COLUMN];
 //利用全局整型变量记录游戏结束的条件
 int End = 0;
 
-//利用全局字符型变量记录游戏模式选择
-char ModeNumber;
-
 //利用全局整型变量记录时间刷新点
 int Timeflag = 1;
 
@@ -38,15 +35,15 @@ int main()
             board[i][j] = 0;
 
     /*进入游戏模式选择界面*/
-    ChooseMode();
-
-    /*利用多线程创造一个倒数器*/
-    pthread_t tid1;
-    pthread_create(&tid1,NULL,*Countdown,NULL);
+    int ModechooseNum = ChooseMode();
 
     /*人人对战模式*/
-    if(ModeNumber == '1')
+    if(ModechooseNum == 1)
     {
+        /*利用多线程创造一个倒数器*/
+        pthread_t tid1;
+        pthread_create(&tid1,NULL,*Countdown,NULL);
+
         /*画出棋盘*/
         draw(board, ROW, COLUMN);
 
@@ -65,6 +62,11 @@ int main()
                 if(getchar() == 'Y')
                 {
                     Question();
+                    if(End == 1)
+                    {
+                        printf("游戏结束，请按任意键退出\n");
+                        break; /*退出人人对战模式循环*/
+                    }
                 }
                 /*如果白方不质疑，则需要输入'N'字符不进行判断*/
                 if(getchar() == 'N')
@@ -90,8 +92,11 @@ int main()
     }
 
     /*人机对战模式*/
-    else if(ModeNumber == '2')
+    else if(ModechooseNum == 2)
     {
+        /*利用多线程创造一个倒数器*/
+        pthread_t tid1;
+        pthread_create(&tid1,NULL,*Countdown,NULL);
 
         /*画出棋盘*/
         draw(board, ROW, COLUMN);

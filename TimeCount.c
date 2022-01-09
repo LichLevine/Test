@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <time.h>
 
-extern board;
 extern Timeflag;
 
 void *Countdown()

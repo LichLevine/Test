@@ -4,7 +4,7 @@
 
 extern fallen[ROW][COLUMN];
 extern End;
-
+extern Timeflag;
 
 /*白方玩家质疑黑方是否违反禁手原则*/
 void Question()
@@ -263,18 +263,21 @@ void Question()
             printf("黑方违反三三禁手原则！\n");
             printf("白方质疑成功，白方获胜！\n");
             End = 1;
+            Timeflag = 2;
         }
     else if(Q == 2 && Forbidden == 2)
         {
             printf("黑方违反四四禁手原则！\n");
             printf("白方质疑成功，白方获胜！\n");
             End = 1;
+            Timeflag = 2;
         }
     else if(Q == 3 && Forbidden == 3)
         {
             printf("黑方违反长连禁手原则！\n");
             printf("白方质疑成功，白方获胜！\n");
             End = 1;
+            Timeflag = 2;
         }
     else
         {

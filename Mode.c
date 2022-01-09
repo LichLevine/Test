@@ -1,10 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-extern ModeNumber;
-
-void ChooseMode()
+int ChooseMode()
 {
+    char ModeNumber;
     printf("*******************************************************************\n");
     printf("*         **********        ***********          **      * *      *\n");
     printf("*             **                   ***         ******   *****     *\n");
@@ -22,5 +21,10 @@ void ChooseMode()
     printf("！！！！！！！！！！！！！！2.繁字斤媾！！！！！！！！！！！！！！！\n");
     printf("！！！！！！！！！！！！！萩補秘低議僉夲！！！！！！！！！！！！！！\n");
     scanf("%c",&ModeNumber);
-    return;
+    if(ModeNumber == '1')
+        return 1;
+    else if(ModeNumber == '2')
+        return 2;
+    else
+        return 3;
 }
